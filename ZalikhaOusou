@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Zalikha Ousou • Portfolio</title>
+  <meta name="description" content="Zalikha Ousou • Mathematical Engineering student at DTU, Teaching Assistant, event organizer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --maxw: 980px; --muted: #666; --line: #eaeaea; --bg: #fafafa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: #0f172a; line-height: 1.6; background: #fff; }
+    a { color: #0f172a; }
+    header { border-bottom: 1px solid var(--line); background: var(--bg); }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 20px; }
+    .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .brand { font-weight: 800; letter-spacing: .2px; font-size: 22px; }
+    nav a { text-decoration: none; margin-left: 14px; }
+    nav a:hover { text-decoration: underline; }
+    .hero { display: grid; grid-template-columns: 1fr; gap: 24px; padding: 28px 0; }
+    .hero h1 { margin: 0 0 8px; font-size: 40px; line-height: 1.15; }
+    .hero p { margin: 0; color: var(--muted); font-size: 18px; }
+    .cta { margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 10px 16px; border: 1px solid #0f172a; border-radius: 12px; text-decoration: none; font-weight: 600; }
+    section { padding: 18px 0 6px; }
+    h2 { margin: 0 0 10px; font-size: 26px; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card { border: 1px solid var(--line); border-radius: 14px; padding: 16px; background: #fff; }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .list { display: grid; gap: 10px; }
+    footer { border-top: 1px solid var(--line); background: var(--bg); }
+    .foot { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; flex-wrap: wrap; gap: 10px; }
+    img.portrait { width: 100%; border-radius: 14px; border: 1px solid var(--line); }
+    @media (min-width: 860px) {
+      .hero { grid-template-columns: 1.2fr .8fr; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <div class="brand">Zalikha Ousou</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Hello, I am Zalikha</h1>
+        <p>Mathematical Engineering student at DTU. Teaching Assistant. Community and event organizer. Interests include data science, climate tech, and finance.</p>
+        <div class="cta">
+          <a class="btn" href="Zalikha_Ousou_CV.pdf">Download CV</a>
+          <a class="btn" href="https://www.linkedin.com/in/zalikha-ousou-9ba1ab231">LinkedIn</a>
+          <a class="btn" href="#contact">Email</a>
+        </div>
+      </div>
+      <img class="portrait" src="portrait.jpg" alt="Portrait of Zalikha Ousou" />
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I study Mathematical Engineering at the Technical University of Denmark. I enjoy building useful tools and sharing knowledge through teaching, mentoring, and public speaking. I am multilingual and comfortable working in Danish, English, Arabic, and German.</p>
+      <p class="muted">Focus areas: statistics, time series, optimization, sustainability, urban resilience, and financial analytics.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Selected projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Wind power forecast</h3>
+          <p>Modeling wind speed and direction with circular statistics and time series pipelines in R and Python. Includes cleaning, fitting, and validation.</p>
+          <p><a href="https://github.com/username/wind-power-forecast">Source</a></p>
+        </article>
+        <article class="card">
+          <h3>Climate resilient cities</h3>
+          <p>Concept site for nature based solutions and community co design. Public facing content, surveys, and simple data views.</p>
+          <p><a href="https://github.com/username/climate-cities">Source</a></p>
+        </article>
+        <article class="card">
+          <h3>Teaching resources</h3>
+          <p>Problem sets, slides, and helper code for DTU courses. Mix of LaTeX and Jupyter with clear write ups for students.</p>
+          <p><a href="https://github.com/username/teaching">Source</a></p>
+        </article>
+        <article class="card">
+          <h3>Issue atlas for energy islands</h3>
+          <p>Team work on mapping actors and arguments in the public debate using a lightweight issue atlas method.</p>
+          <p><a href="https://www.studocu.com/da/document/danmarks-tekniske-universitet/science-technology-and-society/energy-islands-issue-atlas-2/116595954">Read</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <div class="list">
+        <div class="card">
+          <h3>Teaching Assistant at DTU</h3>
+          <p>Helps students with assignments, runs exercise sessions, and contributes to course material at the Department of Technology, Management and Economics.</p>
+          <p class="muted">Email for references available on request.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>Events and community</h2>
+      <div class="list">
+        <div class="card">
+          <h3>Organizer and participant</h3>
+          <p>I take part in and help run student and industry events such as challenge programs, hack schools, and employer meetups. I enjoy creating inclusive spaces where many voices are heard.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:zalou@dtu.dk">zalou@dtu.dk</a>. For collaboration or speaking, include a short outline and timing.</p>
+      <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/zalikha-ousou-9ba1ab231">zalikha-ousou-9ba1ab231</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <small>© <span id="y"></span> Zalikha Ousou</small>
+      <small><a href="https://github.com/username/username.github.io">Site source</a></small>
+    </div>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
